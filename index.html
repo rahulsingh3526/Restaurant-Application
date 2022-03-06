@@ -15,48 +15,41 @@
          <div class = "containerred">
          <input type="text" id= "search" placeholder="Search for the food menu here" autocomplete="off" >
 
-          <ul>
-            <li><p>Pasta                                     15$</p></li>
-            <li>Rice                                            5$</li>
-            <li>Butter Chicken Masala</li>
-            <li>Paneer Butter Masala</li>
-            <li>Fried Potatoes</li>
-            <li>French Fries</li>
-            <li>Chicken Breast with Brown Rice</li>
-            <li>Tuna Fish</li>
-            <li>Boiled Eggs</li>
-            <li>Beef</li>
-            <li>Ladyfinger</li>
-            <li>Salad</li>
-            <li>Pizza</li>
+         <ul>
+            <li class="pasta dark">Pasta                                     15$</li>
+            <li class="rice dark">Rice                                            5$</li>
+            <li class="butter dark">Butter Chicken Masala</li>
+            <li class="paneer dark">Paneer Butter Masala</li>
+            <li class="fried dark">Fried Potatoes</li>
+            <li class="french dark">French Fries</li>
+            <li class="chicken dark">Chicken Breast with Brown Rice</li>
+            <li class="tuna dark">Tuna Fish</li>
+            <li class="boiled dark">Boiled Eggs</li>
+            <li class="beef dark">Beef</li>
+            <li class="lady dark">Ladyfinger</li>
+            <li class="salad dark">Salad</li>
+            <li class="pizza dark">Pizza</li>
           
         
           </ul>
          </div>
         <div class = "containerblue">
-          <label for="">Select Italian Menu</label>
-          <select name="" class="rate">
-                <option disabled selected value="0">
-                  --select an option--
-                </option>
-                <option value="0.25">pasta</option>
-                <option value="0.2">Macaroni</option>
-               <option value="0.15">Garlic Bread</option> 
-             <option value="0.15">Pizza</option>
-              </select>
-          
-           <label for="">Select Indian Menu</label>
-          <select name="" class="rate">
-                <option disabled selected value="0">
-                  --select an option--
-                </option>
-                <option value="0.25">Paneer Masala</option>
-                <option value="0.2">Butter Chicken</option>
-                <option value="0.15">Naan</option>
-              </select>
-
-         <!--  <button>Amount Selected</button> -->
-          
+          <ul>
+            <li class="pasta1 hidden">Pasta                                     15$</li>
+            <li class="rice1 hidden">Rice                                            5$</li>
+            <li class="butter1 hidden">Butter Chicken Masala</li>
+            <li class="paneer1 hidden">Paneer Butter Masala</li>
+            <li class="fried1 hidden">Fried Potatoes</li>
+            <li class="french1 hidden">French Fries</li>
+            <li class="chicken1 hidden">Chicken Breast with Brown Rice</li>
+            <li class="tuna1 hidden">Tuna Fish</li>
+            <li class="boiled1 hidden">Boiled Eggs</li>
+            <li class="beef1 hidden">Beef</li>
+            <li class="lady1 hidden">Ladyfinger</li>
+            <li class="salad1 hidden">Salad</li>
+            <li class="pizza1 hidden">Pizza</li>
+        
+          </ul>
         </div>
         </section>  
         </div>
@@ -94,17 +87,23 @@
           
         </div>
         <div class = "containerviolet">
-          <button class = "button1">Connect Wallet</button>
+          <button onclick= "amountToPay">Pay Now</button>
+          <label for = "final amount"> pay total</label>
+          <input type = "number" id="getpayment">
           <p>we will add the address who wil receive the the amount</p>
           <p>we will mention the amount need to be added from our final amount of the tip calculator</p>
           <hr></hr>
-          <button class = "button2">Pay Now</button>
+          <button onclick="connect" class = "button2">Connect Wallet</button>
           </div>
       </div>
     </section>
         </div>
     </div>
-        
-    <script src="script.js"></script>
+    <script charset="utf-8"
+    src="https://cdn.ethers.io/scripts/ethers-v4.min.js"
+    type="text/javascript">
+</script>   
+    <script src="./script.js"></script>
   </body>
 </html>
+    
